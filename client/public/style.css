@@ -1,0 +1,103 @@
+/* client/public/style.css */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f6f8fa;
+  color: #333;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.chat-log {
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-log p {
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+
+.chat-log p strong {
+  color: #555;
+  margin-right: 5px;
+}
+
+.chat-log p:first-child {
+  background: #f1f5f9;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+input {
+  padding: 13px;  
+  width: 100%;
+  border: 1px solid #ccc;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px; 
+}
+
+button {
+  padding: 12px 16px;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  width: auto;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4f46e5;
+}
+
+.markdown-response {
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.markdown-response a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.markdown-response ul {
+  margin-left: 1.5rem;
+  list-style: disc inside;
+}
+
+.chat-bubble.Hannah {
+  background-color: #f1f0f0;
+  color: #333;
+  align-self: flex-start;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 8px 0;
+  max-width: 80%;
+}
+
+.chat-bubble.user {
+  background-color: #f1f1f1;
+  color: #333;
+  align-self: flex-end;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 8px 0;
+  max-width: 80%;
+}
